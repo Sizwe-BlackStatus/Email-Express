@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+}
+body {
+    background: linear-gradient(#eb6628, #244264 ); ;
+}
+.Email-box {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(132, 83, 70);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1d1d1d;
+}
+input {
+    border-radius: 10px;
+    outline: none;
+}
