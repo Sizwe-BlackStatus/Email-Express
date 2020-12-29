@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
 });
 app.post("/send", (req, res) => {
   let recipientEmail = req.body.emailadd;
+  let recipientName = req.body.firstName;
   let transporter = nodemailer.createTransport({
     service: "sendinblue",
     auth: {
@@ -44,7 +45,7 @@ app.post("/send", (req, res) => {
       console.log(error);
     } else {
       res.render("handle", {
-        successMsg: `Email successfully sent to ${recipientEmail}`,
+        successMsg: `Email successfully sent to ${recipientName}`,
         layout: false,
       });
     }
